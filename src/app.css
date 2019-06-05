@@ -1,0 +1,92 @@
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    align-items: center;
+    background: linear-gradient(-79deg, #21bfde, #1b4faa 69%, #082a8f);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container.evenly {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container h1, .container h2 {
+    color: white;
+}
+
+.container h1 {
+    font-size: 3rem;
+}
+
+.container h2 {
+    margin: 10px 0;
+}
+
+.container a {
+    color: white;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.back {
+    color: white;
+    font-size: 2rem;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    text-decoration: none;
+}
+
+.back:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.box {
+    align-items: center;
+    background: lightgoldenrodyellow;
+    color: #444;
+    display: flex;
+    flex-wrap: wrap;
+    height: 128px;
+    justify-content: center;
+    user-select: none;
+    width: 128px;
+}
+
+.box.big {
+    height: 256px;
+    width: 256px;
+}
+
+
+.box p {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.box.big p {
+    font-size: 4rem;
+}
+
+.box p.active {
+    color: lawngreen !important;
+}
+
+.box span {
+    font-size: 2rem;
+}
