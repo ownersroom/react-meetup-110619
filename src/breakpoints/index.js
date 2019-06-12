@@ -1,1 +1,1 @@
-export { default as Breakpoints } from './breakpoints.old.component';
+export { default as Breakpoints } from './breakpoints.component';

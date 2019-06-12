@@ -1,1 +1,1 @@
-export { default as ClickOutside } from './click-outside.old.component';
+export { default as ClickOutside } from './click-outside.component';

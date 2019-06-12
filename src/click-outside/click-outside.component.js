@@ -1,14 +1,14 @@
-import React, { /* useRef, */ useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-// import { useClickOutside } from "./click-outside.hook";
+import { useClickOutside } from './click-outside.hook';
 
 function ClickOutside() {
   const [outside, setOutside] = useState(false);
 
-  // const ref = useRef();
-  // useClickOutside(ref, () => {
-  //   setOutside(true);
-  // });
+  const ref = useRef();
+  useClickOutside(ref, () => {
+    setOutside(true);
+  });
 
   function handleBoxClick() {
     setOutside(false);
@@ -20,7 +20,7 @@ function ClickOutside() {
         ←
       </Link>
       <div className="container">
-        <div className="box big" onClick={handleBoxClick} /* ref={ref} */>
+        <div className="box big" onClick={handleBoxClick} ref={ref}>
           <p>Box</p>
           <span>{outside ? 'Outside' : 'Inside'}</span>
         </div>

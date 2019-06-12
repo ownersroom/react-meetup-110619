@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { useBreakpoints } from "shared/breakpoints";
+import { useBreakpoints } from 'shared/breakpoints';
 
 function Breakpoints() {
-  // const { xs, sm, md, lg } = useBreakpoints();
+  const { xs, sm, md, lg } = useBreakpoints();
 
   return (
     <>
@@ -12,16 +12,16 @@ function Breakpoints() {
       </Link>
       <div className="container evenly">
         <div className="box">
-          {/* <p className={xs ? "active" : ""}>XS</p> */}
+          <p className={xs ? 'active' : ''}>XS</p>
         </div>
         <div className="box">
-          {/* <p className={sm ? "active" : ""}>SM</p> */}
+          <p className={sm ? 'active' : ''}>SM</p>
         </div>
         <div className="box">
-          {/* <p className={md ? "active" : ""}>MD</p> */}
+          <p className={md ? 'active' : ''}>MD</p>
         </div>
         <div className="box">
-          {/* <p className={lg ? "active" : ""}>LG</p> */}
+          <p className={lg ? 'active' : ''}>LG</p>
         </div>
       </div>
     </>
